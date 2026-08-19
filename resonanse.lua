@@ -1,16 +1,14 @@
 -- Resonance UI recreation
--- Obsidian UI LibraryФ
--- Подставь свой loader библиотеки здесь:
+-- Obsidian UI Library
+-- Подставь свой loader библиотеки здесь:фввфв
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua"))()
 
 local Options = Library.Options
 local Toggles = Library.Toggles
 
 local Window = Library:CreateWindow({
-    Icon = "5012126105",
-    Title = "Resonance",
+    Title = "🌙 Resonance",
     Footer = "Project Resonance",
     Center = true,
     AutoShow = true,
@@ -26,12 +24,12 @@ local Tabs = {
     Combat = Window:AddTab("Combat", "hand"),
     Invincibility = Window:AddTab("Invincibility", "shield"),
     Target = Window:AddTab("Target", "crosshair"),
-    Blobman = Window:AddTab("Blobman", "venetian-mask"),
+    Blobman = Window:AddTab("Blobman", "mask"),
     Toys = Window:AddTab("Toys", "shapes"),
     Visual = Window:AddTab("Visual", "eye"),
     AutoClicker = Window:AddTab("Auto-Clicker", "mouse-pointer"),
     Keybinds = Window:AddTab("Keybinds", "keyboard"),
-    Misc = Window:AddTab("Misc", "funnel"),
+    Misc = Window:AddTab("Misc", "filter"),
     Lists = Window:AddTab("Lists", "scroll-text"),
     Settings = Window:AddTab("Settings", "settings"),
 }
@@ -1279,8 +1277,5 @@ end
 
 Library:SetWatermarkVisibility(false)
 
-ThemeManager:SetLibrary(Library)
-ThemeManager:SetDefaultTheme({
-    BackgroundColor = Color3.fromRGB(15, 15, 15),
-    AccentColor = Color3.fromRGB(255, 255, 0),
-})
+-- Если твой Obsidian fork поддерживает изменение цветов напрямую:
+-- Library.AccentColor = Color3.fromRGB(255, 255, 0)
