@@ -16,21 +16,6 @@ local Window = Library:CreateWindow({
     AutoShow = true,
 })
 
-W:SetCornerRadius(15)
-
-TM:SetLibrary(Lib)
-SM:SetLibrary(Lib)
-
-pcall(function()
-    TM:SetDefaultTheme({
-        BackgroundColor = Color3.fromRGB(15, 15, 15),
-        MainColor = Color3.fromRGB(25, 25, 25),
-        AccentColor = Color3.fromRGB(255, 255, 0),
-        OutlineColor = Color3.fromRGB(70, 70, 70),
-        FontColor = Color3.fromRGB(255, 255, 255),
-        FontFace = "Code",
-    })
-end)
 -- =========================================================
 -- TABS
 -- =========================================================
@@ -1288,3 +1273,14 @@ do
     Configuration:AddLabel("Current autoload config: none")
 end
 
+-- =========================================================
+-- THEME
+-- =========================================================
+
+Library:SetWatermarkVisibility(false)
+
+ThemeManager:SetLibrary(Library)
+ThemeManager:SetDefaultTheme({
+    BackgroundColor = Color3.fromRGB(15, 15, 15),
+    AccentColor = Color3.fromRGB(255, 255, 0),
+})
