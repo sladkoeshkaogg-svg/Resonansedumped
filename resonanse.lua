@@ -1,5 +1,5 @@
 -- Resonance UI recreation
--- Obsidian UI Library
+-- Obsidian UI LibraryФ
 -- Подставь свой loader библиотеки здесь:
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/Library.lua"))()
