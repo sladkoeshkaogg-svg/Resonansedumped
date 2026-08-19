@@ -2,7 +2,7 @@
 -- Obsidian UI Library
 -- Подставь свой loader библиотеки здесь:
 
-local Library = loadstring(game:HttpGet("YOUR_OBSIDIAN_LIBRARY_URL"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/Library.lua"))()
 
 local Options = Library.Options
 local Toggles = Library.Toggles
